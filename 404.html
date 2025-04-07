@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 Not Found – Voltyn Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #f9f9fb;
+      color: #1f1f1f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+      padding: 2rem;
+    }
+
+    .spark-emoji {
+      font-size: 4.5rem;
+      animation: flicker 1.5s infinite alternate ease-in-out, pulse 2s infinite ease-in-out;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-top: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0 2rem;
+      color: #555;
+      max-width: 500px;
+    }
+
+    .home-btn {
+      background-color: #607dff;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background-color: #4a65d4;
+      transform: scale(1.05);
+    }
+
+    @keyframes flicker {
+      0%, 100% {
+        text-shadow: 0 0 6px #607dff99, 0 0 12px #607dffcc;
+      }
+      50% {
+        text-shadow: 0 0 2px #607dffaa;
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="spark-emoji">⚡</div>
+  <h1>404 – Page Not Found</h1>
+  <p>Looks like something short-circuited. Let’s get you back on track.</p>
+  <a href="index.html" class="home-btn">Return Home</a>
+
+</body>
+</html>
